@@ -1,13 +1,11 @@
 import EventItem from "./event-item";
 import classes from "./event-list.module.css";
 
-function EventList({ featuredEvents }) {
+function EventList({ items }) {
   return (
     <ul className={classes.list}>
-      {featuredEvents.length &&
-        featuredEvents.map((featuredEvent) => (
-          <EventItem item={featuredEvent} />
-        ))}
+      {items.length &&
+        items.map((featuredEvent) => <EventItem item={featuredEvent} />)}
     </ul>
   );
 }

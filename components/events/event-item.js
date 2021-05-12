@@ -15,7 +15,7 @@ function EventItem({ item }) {
   });
 
   const formattedAddress = location.replace(",", "\n");
-  const exploreLink = `events/${id}`;
+  const exploreLink = `/events/${id}`;
 
   return (
     <li className={classes.item} key={id}>

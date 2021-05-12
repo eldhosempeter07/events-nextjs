@@ -6,7 +6,7 @@ function HomePage() {
   console.log(featuredEvents);
   return (
     <div>
-      <EventList featuredEvents={featuredEvents} />
+      <EventList items={featuredEvents} />
     </div>
   );
 }
