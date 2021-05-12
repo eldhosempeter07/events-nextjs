@@ -7,13 +7,12 @@ import DateIcon from "../icons/date-icon";
 import ArrowRightIcon from "../icons/arrow-right-icon";
 
 function EventItem({ item }) {
+  const { title, image, date, location, id } = item;
   const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
-
-  const { title, image, date, location, id } = item;
 
   const formattedAddress = location.replace(",", "\n");
   const exploreLink = `events/${id}`;
